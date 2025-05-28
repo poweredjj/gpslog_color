@@ -63,7 +63,7 @@ local function draw()
 	
 	lcd.drawText(5, 0, "GPS logger", MIDSIZE)
 	lcd.drawText(5, 40, "GPS: " .. tostring(latitude) .. ", " .. tostring(longitude), 0)
-	lcd.drawText(5, 50, string.format("altitude %f", altitude), 0)
+	lcd.drawText(5, 60, string.format("altitude %f", altitude), 0)
 	
     if armed then
         local elapsed_time = (getTime() - arm_time) / 100  -- seconds
