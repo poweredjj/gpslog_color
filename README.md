@@ -2,10 +2,11 @@
 For color screen radios that can use widgets.
 
 ## INSTALLATION AND USAGE
-1. Copy ```main.lua``` to ```/WIDGETS/GPSLog/```.
-2. Add "GPS Logger" widget to one of your screens.
-3. GPS logging will be automatic during arm - disarm period.
-4. If GPS fix is acquired, GPX logs will be saved to ```/LOGS```.
+1. Create new folder named ```GPSLog``` in ```/WIDGETS```.
+2. Copy ```main.lua``` to ```/WIDGETS/GPSLog/```.
+3. Add "GPS Logger" widget to one of your screens.
+4. GPS logging will be automatic during arm - disarm period.
+5. If GPS fix is acquired, GPX logs will be saved to ```/LOGS```.
 
 If you get an error, go to ```TELEMETRY``` tab and use ```Sensors``` / ```Discover new```, then restart the radio.
 
@@ -17,3 +18,6 @@ Tested on RadioMaster TX16S, ExpressLRS / Crossfire and M8 / M10 / M100 GPS.
 
 You can freely use and modify this script.
 
+
+<img align="left" width="300" height="183" src="screenshot.jpg">
+<img align="left" width="300" height="300" src="example_track_preview.jpeg">
