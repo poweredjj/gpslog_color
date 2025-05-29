@@ -19,5 +19,5 @@ Tested on RadioMaster TX16S, ExpressLRS / Crossfire and M8 / M10 / M100 GPS.
 You can freely use and modify this script.
 
 
-<img align="left" width="300" height="183" src="screenshot.jpg">
+<img align="left" width="300" height="167" src="screenshot.jpg">
 <img align="left" width="300" height="300" src="example_track_preview.jpeg">
