@@ -61,14 +61,15 @@ end
 local function draw()
 	lcd.clear()
 	
-	lcd.drawText(5, 0, "GPS logger", MIDSIZE)
-	lcd.drawText(5, 40, "GPS: " .. tostring(latitude) .. ", " .. tostring(longitude), 0)
-	lcd.drawText(5, 60, string.format("altitude %f", altitude), 0)
+	lcd.drawText(5, 0, "GPS logger", 0 )
 	
+	lcd.drawText(5, 45, "GPS: " .. tostring(latitude) .. ", " .. tostring(longitude), SMLSIZE)
+	lcd.drawText(5, 60, string.format("ALT: %.2f", altitude), SMLSIZE)
+
     if armed then
         local elapsed_time = (getTime() - arm_time) / 100  -- seconds
-		lcd.drawText(5, 20, string.format("REC (waypoints: %d)", waypoints_recorded), 0)
-		lcd.drawText(5, 30, string.format("Time: %d sec", elapsed_time), 0)
+		lcd.drawText(5, 17, string.format("REC (waypoints: %d)", waypoints_recorded), SMLSIZE)
+		lcd.drawText(5, 31, string.format("Time: %d sec", elapsed_time), SMLSIZE)
     else
         lcd.drawText(5, 20, "IDLE", 0)
     end	
